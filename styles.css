@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("image1.jpg");
+    background-repeat: no-repeat;
+    color: white;
+}
+
+/*Format navbar*/
+
+li {
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;    
+    color:#fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: orange;
+}
+
+header{
+    background: transparent;
+    position: relative;
+    padding: 0 2rem;
+    width: 100%;
+    margin-top: 0;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-height: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.links{
+    position: relative;
+    left: 85px;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*search bar*/
+.search-bar{
+    width: 250px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.search-bar input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+}
+.search-bar input::placeholder{
+    color: white;
+
+}
+
+.search-bar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    
+}
+
+.search-bar button i{
+    font-size: 22px;
+    color: white;
+}
+
+/* Drop Down*/
+.dropdown_menu {
+    display: flex;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    margin-top: 20px;
+    height: 180px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*main login text*/
+
+.login{
+    display: flex;
+    flex-direction: row;
+}
+
+/*format left*/
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    margin-right: 60px;
+}
+
+.titulo, #titulo{
+    color: orange;
+    font-size: 25px;
+}
+
+.login-left-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.social-icons a i{
+    font-size: 22px;
+    color: white;
+    transition: .5s ease;
+}
+
+.social-icons a:hover i{
+    transform: scale(1.2);
+}
+
+/*Login/
+/*tamanho do card*/
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border-radius: 20px;
+    /*espaçamento entre a borda e o form*/
+    padding: 40px;
+    overflow: hidden;
+}
+
+
+.form-wrapper{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: 2s ease-in-out
+}
+
+/*Tamanho do formulario*/
+
+.formulario{
+    width: 100%;
+}
+/*Alinhanndo o tiulo no centro*/
+.formulario h2{
+    text-align: center;
+}
+
+/*Push Sign In Sign up*/
+
+
+.wrapper.active .form-wrapper.sign-in {
+    transform: translateY(-450px);
+}
+
+.wrapper .form-wrapper.sign-up{
+    position: absolute;
+    top: 450px;
+    left: 0;
+
+}
+
+.wrapper.active .form-wrapper.sign-up {
+    transform: translateY(-450px);
+}
+/*Push Sign In Sign up*/
+
+/* Espaçando os forms e colocando a linha de baixo do form*/
+.input-group {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+
+}
+
+/* ajustando o label para a esquerda */
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    background: transparent;
+    transition: .5s;
+
+}
+
+.input-group input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    padding: 0 5px;
+    border: none;
+    outline: none;
+
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label{
+    top: -5px;
+}
+
+.remember {
+    margin: -5px 0px 15px 5px;
+}
+
+.remember label{
+    color: white;
+    font-size: 14px;
+    margin-left: 0px;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    box-shadow: 0 0 10px #042959;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    background: #0baecd;
+}
+
+.signUp-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 15px 0 ;
+    
+}
+
+.signUp-link p a{
+    color: orange;
+    text-decoration: none;
+}
+
+.signUp-link p a:hover{
+    text-decoration: underline;
+}
+
+#form-SignUp{
+    padding: 40px;
+}
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+        z-index: 1;
+
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#"><i class='bx bxl-flutter'></i> Ocean</a></div>
+            <ul class="links">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <form action="#" class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class='bx bx-search'></i></button>
+            </form>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="hero">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+        </div>
+    </header>
+
+    <div class="login">
+
+        <div class="login-left">
+            <h2 class="titulo"><i id="titulo" class='bx bxl-flutter'></i> Be the change with us</h2>
+            <div class="login-left-text">
+                <h1>Welcome!</h1>
+                <h2 id="subtitulo">For your newest experience.</h2>
+                <p>Fundamentum beatae vitae est quod plenus est praemiis experientiis.</p>
+
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-google' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="form-wrapper sign-in">
+                <form class="formulario">
+                    <h2>Login</h2>
+                    <div class="input-group">
+                        <input type="text" required name="name">
+                        <label for="name">Username</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" required name="password">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="remember">
+                        <label><input type="checkbox">Remember me</label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <div class="signUp-link">
+                        <p>Don't have an account? <a href="#" class="signUpBtn-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-wrapper sign-up" id="form-SignUp">
+                <form class="formulario">
+                    <h2>Sign Up</h2>
+                    <div class="input-group">
+                        <input type="text" required name="name">
+                        <label for="name">Username</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" required name="email">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" required name="password">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <div class="remember">
+                        <label><input type="checkbox" required>I agree to term & conditions</label>
+                    </div>
+
+                    <button type="submit">Sign Up</button>
+                    <div class="signUp-link">
+                        <p>Already have an account? <a href="#" class="signInBtn-link">Sign In</a></p>
+                    </div>
+
+                
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
